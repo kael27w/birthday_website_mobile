@@ -1,6 +1,8 @@
 import React from 'react'
 import SectionWrapper from './SectionWrapper'
 import "../assets/css/present.css";
+import { Link } from 'react-router-dom';
+
 function Present() {
   return (
     <SectionWrapper>
@@ -16,7 +18,7 @@ function Present() {
           <div className="gift-bottom"></div>
           <div id="raffle-red" className="entry raffle raffle-1">
             <div className="no-scale">
-              <span className="ticket-text">Free<br/>Pedicure</span>
+              <span className="ticket-text">Free<br/>Movie</span>
             </div>
           </div>
           <div id="raffle-red" className="entry raffle raffle-2">
@@ -26,11 +28,16 @@ function Present() {
           </div>
           <div id="raffle-red" className="entry raffle raffle-3">
             <div className="no-scale">
-              <span className="ticket-text">Free<br/>Dinner</span>
+              <span className="ticket-text">Free<br/>Dessert</span>
             </div>
           </div>
         </label>
       </div>
+      <Link to="/end" className="fixed bottom-8 left-0 right-0 flex justify-center items-center">
+        <p className="px-7 py-3 bg-customBlue text-white rounded-full hover:bg-blue-600 font-medium text-base text-center">
+          Next Page
+        </p>
+      </Link>
     </SectionWrapper>
   )
 }

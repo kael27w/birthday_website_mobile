@@ -4,6 +4,7 @@ import Card from "./Card";
 import SectionWrapper from "./SectionWrapper";
 import Cake from "./Cake";
 import Present from "./Present";
+import End from "./End";
 
 
 export {
@@ -12,5 +13,6 @@ export {
     Card,
     SectionWrapper,
     Cake,
-    Present
+    Present,
+    End
 }
